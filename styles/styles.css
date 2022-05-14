@@ -1,0 +1,248 @@
+/* Base Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#time-stamp{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+
+h1 {
+    margin: 20px auto;
+    font-size: 50px;
+    color: white;
+    font-family: "Sacramento";
+  }
+
+h2 {
+    font-size: 1.5rem;
+    color:rgba(255, 255, 255, 0.893);
+}
+
+hr {
+    border-style: dotted none none;
+    border-color:#f86cd8;
+    border-width: 20px;
+    width: 10%;
+  
+  }
+  
+body{
+    font-family: Montserrat;
+    margin:auto;
+    font-weight: 1000;
+    background-color: #241f55;
+    background-image: url(5522178.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+button {
+  cursor: pointer;
+}
+
+a {
+    color: #f386ff;
+    font-size: large;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Container */
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+/* Header */
+
+.header {
+	background: linear-gradient(-45deg, #943776, #4e2b6d, #cd587b, #b3519c);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    padding: 1.6rem 0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.header__title {
+  font-size: 3.2rem;
+  margin-bottom: .4rem;
+}
+
+.header__subtitle {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/* Actions Bar */
+
+.actions {
+    background-color: #c447c800;
+    padding: 2rem
+}
+
+
+
+.actions__container {
+    align-items: center;
+    display: flex;
+    max-width: 60rem;
+    margin: 0 auto;
+    min-height: 3rem;
+    padding: 0 1.6rem;
+}
+
+::-webkit-input-placeholder {
+    color:rgba(255, 141, 242, 0.568);
+}
+
+::-moz-placeholder {
+    color:rgba(255, 141, 242, 0.568);
+}
+
+::-ms-placeholder {
+    color:rgba(255, 141, 242, 0.568);
+}
+
+::placeholder {
+    color:rgba(255, 141, 242, 0.568);
+}
+
+.actions__container--spaced {
+    justify-content: space-between
+}
+
+/* Form Inputs */
+
+.input {
+    border: 1px solid #710085;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    margin-right: .8rem;
+    padding: .4rem .8rem;
+}
+
+.dropdown {
+    border-radius: 0;
+    border: 1px solid #9c05f4;
+    background: rgba(255, 255, 255, 0.893);
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 1000;
+    height: 3rem;
+    margin-right: .8rem;
+}
+
+.button {
+    background: #ea15f199;
+    border: none;
+    border-bottom: 2px solid #e764f3;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease;
+}
+
+.button:hover {
+    background: #f313b3;
+}
+
+.button--secondary {
+    background: #ea15f199;
+    border-bottom: 2px solid #e764f3;
+}
+
+.button--secondary:hover {
+    background: #f313b3;
+}
+
+/* Note editor */
+
+.title-input {
+    border: 1px solid #f765ff25;
+    color:#ffffff;
+    background-color: rgb(35,34,34, 0.5);
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 1000;
+    display: block;
+    margin: 2.4rem 0;
+    padding: .8rem;
+    width: 100%;
+}
+
+.body-input {
+    border: 1px solid #f765ff25;
+    font-family: inherit;
+    font-size: 1.6rem;
+    background-color: rgb(35,34,34, 0.5);
+    color:#ffffff;
+    font-weight: 1000;
+    display: block;
+    margin: 2.4rem 0;
+    min-height: 15rem;
+    padding: .8rem;
+    width: 100%;
+}
+
+/* Note List Item */
+
+.list-item {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgb(35,34,34, 0.5);
+    margin: 1.6rem 0;
+    padding: 1.6rem;
+    display: block;
+    transition: background .3s ease;
+}
+
+.list-item:hover {
+    background: #ff00ea59;
+}
+
+.list-item__title {
+    font-size: 1.8rem;
+    margin-bottom: .4rem
+}
+
+.list-item__subtitle {
+    color: rgb(254, 209, 255);
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: italic;
+    
+}
+
+.empty-message {
+    text-align: center;
+    margin: 3.2rem 0;
+}
+
